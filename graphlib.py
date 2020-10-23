@@ -159,23 +159,6 @@ def graph_init():
 
 
 if __name__ == '__main__':
-    # graph = graph_init()
-    # graph.find_shortest_path()
-    # print(graph.end_node_min_cost)
-    a = Node('a')
-    b = Node('b')
-    c = Node('c')
-    a.add_neighbour(b, 3)
-    a.add_neighbour(c, 7)
-    b.add_neighbour(c, 4)
-
-    gr = Graph()
-    gr.add_node(a)
-    gr.add_node(b)
-    gr.add_node(c)
-    gr.begin_node = a
-    gr.end_node = c
-    gr.find_shortest_path()
-    print(gr.end_node_min_cost)
-
-
+    graph = graph_init()
+    graph.find_shortest_path()
+    print(graph.end_node_min_cost)
